@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/performance/performance.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+      <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="/script.js"></script>
+    <div class="nav">
+      <div class="logo-div">
+        <a href="/">
+          <img class="logo" src="/img/Logo.png" alt="">
+  
+        </a>
+      </div>
+      <div class="nav-items">
+        <a href="" class="nav-item">how it works</a>
+        <div class="toggle-items">
+          <div class="toggle-items-div">
+            <a class="nav-item" onclick="toggleDropdown('performance')">Performance</a>
+            <img onclick="toggleDropdown('performance')" src="/img/arrow-down.png" alt="">
+          </div>
+          <div id="performanceDropdown" class="dropdown-content">
+            <a href="/performance/performance.html">Performance</a>
+            <a>Testimonials</a>
+          </div>
+        </div>
+        <div class="toggle-items">
+          <div class="toggle-items-div">
+            <a class="nav-item" onclick="toggleDropdown('about')">about</a>
+            <img onclick="toggleDropdown('about')" src="/img/arrow-down.png" alt="">
+          </div>
+          <div id="aboutDropdown" class="dropdown-content">
+            <a>Career</a>
+            <a href="/team/team.html">Our team</a>
+          </div>
+        </div>
+        <div class="toggle-items">
+          <div class="toggle-items-div">
+            <a class="nav-item" onclick="toggleDropdown('education')">Education</a>
+            <img onclick="toggleDropdown('education')" src="/img/arrow-down.png" alt="">
+          </div>
+          <div id="educationDropdown" class="dropdown-content">
+            <a href="/Blog/Blog.html">Blog</a>
+            <a>Research</a>
+          </div>
+        </div>
+        <a href="" class="nav-item">Contact us</a>
+      </div>
+  
+  
+      <div class="login-mobile-navigation-div">
+        <div class="login-btn-div">
+          <button class="login-btn">LOGIN</button>
+        </div>
+  
+        <button class="mobile-menu-btn" onclick="toggleNav()"><img class="menu-icon" src="/img/mobile-menu.png"
+            alt=""></button>
+  
+        <ul class="nav-menu" id="navMenu">
+          <button class="mobile-menu-close-btn" onclick="toggleNav()"><img style="width: 50px;" src="/img/close-white-buton.png"
+              alt=""></button>
+          <div class="mobile-nav-items">
+            <li><a href="#home">how it works</a></li>
+            <div class="mobile-nav-links">
+              <li><a href="/performance/performance.html">Performance</a></li>
+              <div class="mobile-nav-links-info">
+                <a href="/performance/performance.html">Performance</a>
+                <a href="">Testimonials</a>
+              </div>
+            
+            </div>
+            <div class="mobile-nav-links">
+              <li><a href="">about</a></li>
+              <div class="mobile-nav-links-info">
+              <a href="">Career</a>
+              <a href="/team/team.html">Our Team</a>
+              </div>
+            </div>
+            <div class="mobile-nav-links">
+              <li><a href="#contact">Education</a></li>
+              <div class="mobile-nav-links-info">
+              <a href="/Blog/Blog.html">Blog</a>
+              <a href="">Research</a>
+              </div>
+            </div>
+            <li><a href="#contact">Contact us</a></li>
+          </div>
+  
+        </ul>
+      </div>
+  
+  
+    </div>
+
+      <div class="cumulative-returns-section">
+        <h2 class="cumulative-returns-title">Cumulative returns</h2>
+        <div class="cumulative-returns-image-div">
+            <img class="cumulative-returns-image" src="/img/statistic.png" alt="">
+        </div>
+      </div>
+
+      <div class="key-performance-section">
+        <h2 class="key-performance-title">Key Performance Metrics</h2>
+
+        <div class="metrics-div">
+            <div class="metrics-orange-slice">
+                <div class="metrics-orange-header">
+                    <span  class="metrics-header-info">Metric</span>
+                    <span  class="metrics-header-info">Strategy</span>
+                </div>
+                <div class="metrics-info-slices">
+                    <div class="metrics-orange-first-info">
+                        <div class="metrics-info"><p class="metrics-info-title">Risk-Free Rate</p> <span class="metrics-info-description">0.0%</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Time in Market</p> <span class="metrics-info-description">100%</span></div>
+                    </div>
+                    <div class="metrics-orange-second-info">
+                        <div class="metrics-info"><p class="metrics-info-title">Cumulative return</p> <span class="metrics-info-description">48.66%</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">CAGR%</p> <span class="metrics-info-description">95.43%</span></div>
+                    </div>
+                </div>
+       
+            </div>
+
+            <div class="metrics-blue-slice">
+                <div class="metrics-blue-header">
+                    <span class="metrics-header-info">Metric</span>
+                    <span  class="metrics-header-info">Strategy</span>
+                </div>
+                <div class="metrics-info-slices">
+                    <div class="metrics-blue-first-info">
+                        <div class="metrics-info"><p class="metrics-info-title">Sharpe</p> <span class="metrics-info-description">1.73</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Prob. Sharpe Ratio</p> <span class="metrics-info-description">92.2%</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Smart Sharpe</p> <span class="metrics-info-description">1.53</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Sortino</p> <span class="metrics-info-description">3.23</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Smart Sortino</p> <span class="metrics-info-description">2.85</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Sortino / √2</p> <span class="metrics-info-description">2.28</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Smart Sortino / √2</p> <span class="metrics-info-description">2.01</span></div>
+                        <div class="metrics-info"><p class="metrics-info-title">Omega</p> <span class="metrics-info-description">1.36</span></div>
+                    </div>
+                </div>
+       
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-items">
+            <div class="footer-item-div">
+              <a class="footer-item" href="">how it works</a>
+            </div>
+    
+            <div class="footer-item-div">
+              <a class="footer-item" href="">Performance</a>
+              <a href="/performance/performance.html" class="footer-item-info">Performance</a>
+              <a class="footer-item-info">Testimonials</a>
+            </div>
+    
+            <div class="footer-item-div">
+              <a class="footer-item" href="">About</a>
+              <a class="footer-item-info">Careers</a>
+              <a href="/team/team.html" class="footer-item-info">Our team</a>
+            </div>
+    
+            <div class="footer-item-div">
+              <a class="footer-item" href="">Education</a>
+              <a href="/Blog/Blog.html" class="footer-item-info">Blog</a>
+              <a class="footer-item-info">Research</a>
+            </div>
+    
+            <div class="footer-item-div">
+              <a class="footer-item" href="">Contacts</a>
+              <span class="footer-item-info">finrev@gmail.com</span>
+              <span class="footer-item-info">844-943-5378</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-items">
+            <div class="center-div">
+              <div class="logo-div">
+                <img class="logo" src="/img/Logo.png" alt="">
+              </div>
+              <div class="footer-social-icons">
+                <a class="social-icons-parent" href="">
+                  <img class="social-icons" src="/img/footer-facebook.png" alt="">
+                </a>
+    
+                <a class="social-icons-parent" href="">
+                  <img class="social-icons" src="/img/footer-gmail.png" alt="">
+                </a>
+    
+                <a class="social-icons-parent" href="">
+                  <img class="social-icons" src="/img/footer-instagram.png" alt="">
+                </a>
+    
+                <a class="social-icons-parent" href="">
+                  <img class="social-icons" src="/img/footer-telegram.png" alt="">
+                </a>
+              </div>
+              <div class="footer-copyright-div">
+                <div class="footer-copyright-first-item">
+                  <p class="copyright">Finrev, <br> Incorporated</p>
+                </div>
+                <div class="footer-copyright-second-item">
+                  <p class="copyright">
+                    Copyright © 2023 <br> All rights reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+</body>
+</html>

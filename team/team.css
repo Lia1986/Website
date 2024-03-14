@@ -1,0 +1,450 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: unset;
+}
+/* team header  */
+
+.header-background {
+  background: radial-gradient(160.92% 100% at 50% 100%, #304685 0%, rgba(48, 70, 133, 0.00) 100%), #040A26;
+  height: 1150px;
+}
+
+.team-header {
+  width: 100%;
+  padding-top: 250px;
+}
+
+.team-header-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -2.1px;
+  padding: 90px 0px;
+  background-image: url('/img/team-header-pattern.png');
+  background-size: contain;
+  background-repeat: round;
+  border: 3px solid #033c5fba;
+}
+
+/* leadership */
+
+.leadership {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.team-members-first-slice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 0px 50px;
+}
+
+.team-member {
+  text-align: center;
+  position: relative;
+}
+
+.team-member-img-div {
+  border-radius: 30px;
+  background: #FFF;
+}
+
+.team-member-img {
+  padding: 15px;
+  border-radius: 36px;
+  width: 100%;
+}
+
+.team-member-info-div {
+  border-radius: 10px;
+  background: var(--Light-100, #FFF);
+  width: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  left: 10%;
+  top: 73%;
+  align-items: center;
+}
+
+.team-member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+}
+
+.leadership-title {
+  color: #FFF;
+
+  font-family: Poppins;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  /* 57.5px */
+  letter-spacing: -1.84px;
+}
+
+.team-member-name {
+  color: #222631;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: -0.96px;
+}
+
+.data {
+  color: #99A7CC;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 21px */
+  text-transform: uppercase;
+}
+
+/* submit-resume*/
+
+
+.submit-resume-section{
+  margin-top: 45% !important;
+  align-items: center !important;
+  gap: 60px !important;
+  border-radius: 30px;
+background: #FFF;
+width: 60% !important;
+margin: 0 auto;
+padding: unset !important;
+  
+}
+
+.new-description{
+  color: #797D91;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%; /* 39.6px */
+letter-spacing: -0.44px;
+}
+
+.big-profits-about{
+  width: 40% !important; 
+}
+
+.big-profits-img-div{
+  width: 50% !important;
+}
+
+.new-section-parts{
+  padding: 40px; 
+  display: flex; 
+  align-items: center; 
+  gap: 60px;
+}
+
+/* bulid with us  */
+
+.build-with-us-description{
+  color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%; /* 39.6px */
+letter-spacing: -0.44px;
+width: 50%;
+}
+
+.build-with {
+  width: 100%;
+  background: radial-gradient(160.92% 100% at 50% 100%, #304685 0%, rgba(48, 70, 133, 0.00) 100%), #16266c;;
+  background-image: url('/img/team-header-pattern.png');
+  background-repeat: round;
+  padding: 110px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  margin-top: 200px;
+}
+
+/* footer  */
+
+.footer {
+  width: 100%;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  margin: 0 auto;
+}
+
+.footer-top {
+  background-color: #1a7ace;
+  padding-top: 120px;
+  padding-bottom: 92px;
+}
+
+.footer-item {
+  color: var(--Light-100, #FFF);
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+}
+
+.footer-item-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-item-info {
+  color: #4DDAFF;
+  margin-top: 5px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  cursor: pointer;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  background-color: #0d8bd0;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.footer-copyright-div {
+  display: flex;
+  align-items: center;
+
+}
+
+.copyright {
+  color: #41ABED;
+  font-family: Poppins;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.footer-copyright-first-item {
+  padding-right: 90px;
+  border-right: 2px solid #41abedc1;
+}
+
+.footer-copyright-second-item {
+  padding-left: 90px;
+}
+
+.center-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.footer-social-icons {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .team-members-first-slice{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-background{
+    height: unset;
+  }
+
+  .submit-resume-section{
+    margin-top: 20% !important;
+  }
+
+  .team-members {
+    padding-bottom: 100px;
+  }
+
+ 
+  .big-profits-img-div {
+    width: 80% !important;
+  }
+
+  .big-profits-about{
+    width: 85% !important;
+  }
+
+  .submit-resume-section {
+    width: 85% !important;
+  }
+
+
+  .team-member{
+    width: 300px;
+  }
+  .team-member-info-div {
+    padding: 10px;
+    top: 74%;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .team-header-title{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .new-section-parts{
+    flex-direction: column;
+  }
+  .new-description{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .new-section-parts{
+    padding: 30px 10px;
+  }
+
+
+
+  .big-profits-about {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+.team-member{
+  width: 250px;
+}
+
+.team-member-img{
+  padding: 7px;
+}
+
+.team-member-info-div {
+  top: 71%;
+}
+
+.team-header{
+  padding-top: 150px;
+}
+
+.build-with-us-description{
+  width: 90%;
+}
+
+.big-profits-img-div {
+  width: 92% !important;
+}
+.big-profits-about {
+  gap: 20px !important;
+}
+
+.team-header-title {
+  padding: 50px 0px;
+}
+
+.team-member-info{
+  gap: 5px;
+}
+.team-social-icons-div{
+  width: 40px;
+}
+
+.team-social-icon{
+  width: 100%;
+}
+.data{
+  font-size: 13px !important;
+}
+
+
+.leadership {
+  gap: 40px;
+}
+.team-header-title{
+  font-size: 25px !important;
+  line-height: 35px !important;
+}
+.leadership-title{
+  font-size: 24px !important;
+}
+}
+
+@media only screen and (max-width: 530px) {
+  .team-member{
+    width: 300px;
+  }
+  .team-member-info-div {
+    top: 77%;
+  }
+  .team-members {
+    padding-bottom: 60px;
+  }
+
+  .submit-resume-section {
+    margin-top: 40px;
+  }
+
+  .new-section-parts {
+    gap: 30px;
+  }
+
+  .team-members-first-slice{
+    padding: unset;
+  }
+
+}
+@media only screen and (max-width: 530px) {
+  .team-member {
+    width: 250px;
+  }
+}
+

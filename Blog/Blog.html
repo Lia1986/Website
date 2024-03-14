@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/Blog/Blog.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="/Blog/Blog.js"></script>
+  <script src="/script.js"></script>
+
+  <div class="header-background">
+    <div class="nav">
+      <div class="logo-div">
+        <a href="/">
+          <img class="logo" src="/img/Logo.png" alt="">
+  
+        </a>
+      </div>
+      <div class="nav-items">
+        <a href="" class="nav-item">how it works</a>
+        <div class="toggle-items">
+          <div class="toggle-items-div">
+            <a class="nav-item" onclick="toggleDropdown('performance')">Performance</a>
+            <img onclick="toggleDropdown('performance')" src="/img/arrow-down.png" alt="">
+          </div>
+          <div id="performanceDropdown" class="dropdown-content">
+            <a href="/performance/performance.html">Performance</a>
+            <a>Testimonials</a>
+          </div>
+        </div>
+        <div class="toggle-items">
+          <div class="toggle-items-div">
+            <a class="nav-item" onclick="toggleDropdown('about')">about</a>
+            <img onclick="toggleDropdown('about')" src="/img/arrow-down.png" alt="">
+          </div>
+          <div id="aboutDropdown" class="dropdown-content">
+            <a>Career</a>
+            <a href="/team/team.html">Our team</a>
+          </div>
+        </div>
+        <div class="toggle-items">
+          <div class="toggle-items-div">
+            <a class="nav-item" onclick="toggleDropdown('education')">Education</a>
+            <img onclick="toggleDropdown('education')" src="/img/arrow-down.png" alt="">
+          </div>
+          <div id="educationDropdown" class="dropdown-content">
+            <a href="/Blog/Blog.html">Blog</a>
+            <a>Research</a>
+          </div>
+        </div>
+        <a href="" class="nav-item">Contact us</a>
+      </div>
+  
+  
+      <div class="login-mobile-navigation-div">
+        <div class="login-btn-div">
+          <button class="login-btn">LOGIN</button>
+        </div>
+  
+        <button class="mobile-menu-btn" onclick="toggleNav()"><img class="menu-icon" src="/img/mobile-menu.png"
+            alt=""></button>
+  
+        <ul class="nav-menu" id="navMenu">
+          <button class="mobile-menu-close-btn" onclick="toggleNav()"><img style="width: 50px;" src="/img/close-white-buton.png"
+              alt=""></button>
+          <div class="mobile-nav-items">
+            <li><a href="#home">how it works</a></li>
+            <div class="mobile-nav-links">
+              <li><a href="/performance/performance.html">Performance</a></li>
+              <div class="mobile-nav-links-info">
+                <a href="/performance/performance.html">Performance</a>
+                <a href="">Testimonials</a>
+              </div>
+            
+            </div>
+            <div class="mobile-nav-links">
+              <li><a href="">about</a></li>
+              <div class="mobile-nav-links-info">
+              <a href="">Career</a>
+              <a href="/team/team.html">Our Team</a>
+              </div>
+            </div>
+            <div class="mobile-nav-links">
+              <li><a href="#contact">Education</a></li>
+              <div class="mobile-nav-links-info">
+              <a href="/Blog/Blog.html">Blog</a>
+              <a href="">Research</a>
+              </div>
+            </div>
+            <li><a href="#contact">Contact us</a></li>
+          </div>
+  
+        </ul>
+      </div>
+  
+  
+    </div>
+    <div class="blog-header-section">
+      <p class="blog-header-title">Personalized Profits</p>
+      <h2 class="blog-header-description">Incredible Returns <br> Without The Drawdowns</h2>
+      <div class="blog-header-image-div">
+        <img class="blog-header-image" src="/img/Personalized-Profits.jpg" alt="">
+      </div>
+      <div class="blog-header-about">
+        <span class="blog-header-about-description">
+          When we take standard trend following algorithms which have made billions in traditional markets and apply
+          them to crypto they perform 3x better. We have no fundamental opinions about the merits of any individual
+          coin. All trading decisions are made algorithmically, eliminating human error.
+        </span>
+        <span class="blog-header-about-info">We take positions in every crypto coin which starts to rise in value.
+          And simultaneously take short positions in every crypto coin which starts to fall. By simultaneously trading
+          over 100 coins in a long-short portfolio we are insulated from broader market trends while providing
+          extraordinary returns.</span>
+      </div>
+    </div>
+  </div>
+  <div class="padding-div">
+    <div class="mission-statement-section">
+      <h2 class="mission-statement-title">Mission Statement h2</h2>
+      <div class="mission-statement-items">
+        <div class="mission-statement-item">
+          <img src="/img/dot.png" alt="">
+          <span class="mission-statement-item-description">Our approach is to try and make profits in both up and down
+            markets</span>
+        </div>
+        <div class="mission-statement-item">
+          <img src="/img/dot.png" alt="">
+          <span class="mission-statement-item-description">We take positions in every crypto coin which starts to rise
+            in value. </span>
+        </div>
+        <div class="mission-statement-item">
+          <img src="/img/dot.png" alt="">
+          <span class="mission-statement-item-description">Our approach is to try and make profits in both up and down
+            markets</span>
+        </div>
+        <div class="mission-statement-item">
+          <img src="/img/dot.png" alt="">
+          <span class="mission-statement-item-description">All trading decisions are made algorithmically, eliminating
+            human error.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-carousel-main">
+      <div class="blog-carousel">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+        <img src="/img/carousel-images/image 329.png" alt="">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+        <img src="/img/carousel-images/image 329.png" alt="">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+        <img src="/img/carousel-images/image 329.png" alt="">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+      </div>
+
+      <div class="blog-carousel-nav">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+        <img src="/img/carousel-images/image 329.png" alt="">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+        <img src="/img/carousel-images/image 329.png" alt="">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+        <img src="/img/carousel-images/image 329.png" alt="">
+        <img src="/img/Personalized-Profits.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="solution-section">
+      <h2 class="mission-statement-title">Our Solution</h2>
+      <p class="mission-statement-item-description">When we take standard trend following algorithms which have made
+        billions in traditional markets and apply them to crypto they perform 3x better. We have no fundamental opinions
+        about the merits of any individual coin. All trading decisions are made algorithmically, eliminating human
+        error.</p>
+      <div class="mission-statement-items">
+        <div class="mission-statement-item">
+          <div class="numbers-div"><span class="numbers">1</span></div>
+          <span class="mission-statement-item-description">Our approach is to try and make profits in both up and down
+            markets</span>
+        </div>
+        <div class="mission-statement-item">
+          <div class="numbers-div"><span class="numbers">2</span></div>
+          <span class="mission-statement-item-description">We take positions in every crypto coin which starts to rise
+            in value. </span>
+        </div>
+        <div class="mission-statement-item">
+          <div class="numbers-div"><span class="numbers">3</span></div>
+          <span class="mission-statement-item-description">Our approach is to try and make profits in both up and down
+            markets</span>
+        </div>
+        <div class="mission-statement-item">
+          <div class="numbers-div"><span class="numbers">4</span></div>
+          <span class="mission-statement-item-description">All trading decisions are made algorithmically, eliminating
+            human error.</span>
+        </div>
+        <div class="mission-statement-item">
+          <div class="numbers-div"><span class="numbers">5</span></div>
+          <span class="mission-statement-item-description">All trading decisions are made algorithmically, eliminating
+            human error.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-video-section">
+      <h2 class="mission-statement-title">Image or video section</h2>
+      <div class="image-video-div">
+        <img class="image-video" src="/img/Personalized-Profits.jpg" alt="">
+      </div>
+      <span class="subscription">Subscription under the video if you need it</span>
+      <div class="image-video-info">
+        <h2 class="image-video-info-title">When we take standard h3</h2>
+        <p class="mission-statement-item-description">When we take standard trend following algorithms which have made
+          billions in traditional markets and apply them to crypto they perform 3x better. We have no fundamental
+          opinions about the merits of any individual coin. All trading decisions are made algorithmically, eliminating
+          human error.</p>
+      </div>
+      <div class="image-video-info">
+        <h2 class="image-video-info-title">When we take standard</h2>
+        <p class="mission-statement-item-description">When we take standard trend following algorithms which have made
+          billions in traditional markets and apply them to crypto they perform 3x better. We have no fundamental
+          opinions about the merits of any individual coin. All trading decisions are made algorithmically, eliminating
+          human error.</p>
+      </div>
+    </div>
+
+    <div class="info-area">
+      <div class="info-area-description-div">
+        <p class="info-area-description">We take positions in every crypto coin which starts to rise in value.
+          And simultaneously take short positions in every crypto coin which starts to fall.</p>
+      </div>
+      <div class="info-area-user">
+        <img class="info-area-user-image" src="/img/info-area-user.png" alt="">
+        <div class="info-area-user-description">
+          <p class="user-name">Ayesha Holt</p>
+          <span class="investor-date">Investor since 2019</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="mission-statement-item-description">When we take standard trend following algorithms which have made
+        billions in traditional markets and apply them to crypto they perform 3x better. We have no fundamental opinions
+        about the merits of any individual coin. All trading decisions are made algorithmically, eliminating human
+        error.</p>
+    </div>
+
+    <div class="share">
+      <span class="subscription">Share via:</span>
+      <div class="share-social-icons">
+        <img src="/img/facebook.png" alt="">
+        <img src="/img/gmail.png" alt="">
+        <img src="/img/instagram.png" alt="">
+        <img src="/img/telegram.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="related-articles">
+    <h2 class="related-articles-title">Related Articles</h2>
+    <div class="related-articles-items">
+      <div class="related-articles-item">
+        <div class="related-articles-item-image">
+          <img class="related-articles-image" src="/img/related-articles1.jpg" alt="">
+        </div>
+        <div class="related-articles-info">
+          <p class="related-articles-info-title">Image or video section</p>
+          <span class="mission-statement-item-description">When we take standard trend following algorithms which
+            have...</span>
+          <div class="related-articles-info-btn">
+            <img src="/img/submit-resume-icon.png" alt="">
+            <p class="read-more">Read more</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="related-articles-item">
+        <div class="related-articles-item-image">
+          <img class="related-articles-image" src="/img/related-articles2.jpg" alt="">
+        </div>
+        <div class="related-articles-info">
+          <p class="related-articles-info-title">Image or video section</p>
+          <span class="mission-statement-item-description">When we take standard trend following algorithms which
+            have...</span>
+          <div class="related-articles-info-btn">
+            <img src="/img/submit-resume-icon.png" alt="">
+            <p class="read-more">Read more</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="related-articles-item">
+        <div class="related-articles-item-image">
+          <img class="related-articles-image" src="/img/related-articles3.jpg" alt="">
+        </div>
+        <div class="related-articles-info">
+          <p class="related-articles-info-title">Image or video section</p>
+          <span class="mission-statement-item-description">When we take standard trend following algorithms which
+            have...</span>
+          <div class="related-articles-info-btn">
+            <img src="/img/submit-resume-icon.png" alt="">
+            <p class="read-more">Read more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-div">
+      <button class="related-articles-btn">view all articles</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-items">
+        <div class="footer-item-div">
+          <a class="footer-item" href="">how it works</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">Performance</a>
+          <a href="/performance/performance.html" class="footer-item-info">Performance</a>
+          <a class="footer-item-info">Testimonials</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">About</a>
+          <a class="footer-item-info">Careers</a>
+          <a href="/team/team.html" class="footer-item-info">Our team</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">Education</a>
+          <a href="/Blog/Blog.html" class="footer-item-info">Blog</a>
+          <a class="footer-item-info">Research</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">Contacts</a>
+          <span class="footer-item-info">finrev@gmail.com</span>
+          <span class="footer-item-info">844-943-5378</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-items">
+        <div class="center-div">
+          <div class="logo-div">
+            <img class="logo" src="/img/Logo.png" alt="">
+          </div>
+          <div class="footer-social-icons">
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-facebook.png" alt="">
+            </a>
+
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-gmail.png" alt="">
+            </a>
+
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-instagram.png" alt="">
+            </a>
+
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-telegram.png" alt="">
+            </a>
+          </div>
+          <div class="footer-copyright-div">
+            <div class="footer-copyright-first-item">
+              <p class="copyright">Finrev, <br> Incorporated</p>
+            </div>
+            <div class="footer-copyright-second-item">
+              <p class="copyright">
+                Copyright © 2023 <br> All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

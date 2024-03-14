@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="/script.js"></script>
+
+  <div class="nav">
+    <div class="logo-div">
+      <a href="/">
+        <img class="logo" src="/img/Logo.png" alt="">
+
+      </a>
+    </div>
+    <div class="nav-items">
+      <a href="" class="nav-item">how it works</a>
+      <div class="toggle-items">
+        <div class="toggle-items-div">
+          <a class="nav-item" onclick="toggleDropdown('performance')">Performance</a>
+          <img onclick="toggleDropdown('performance')" src="/img/arrow-down.png" alt="">
+        </div>
+        <div id="performanceDropdown" class="dropdown-content">
+          <a href="/performance/performance.html">Performance</a>
+          <a>Testimonials</a>
+        </div>
+      </div>
+      <div class="toggle-items">
+        <div class="toggle-items-div">
+          <a class="nav-item" onclick="toggleDropdown('about')">about</a>
+          <img onclick="toggleDropdown('about')" src="/img/arrow-down.png" alt="">
+        </div>
+        <div id="aboutDropdown" class="dropdown-content">
+          <a>Career</a>
+          <a href="/team/team.html">Our team</a>
+        </div>
+      </div>
+      <div class="toggle-items">
+        <div class="toggle-items-div">
+          <a class="nav-item" onclick="toggleDropdown('education')">Education</a>
+          <img onclick="toggleDropdown('education')" src="/img/arrow-down.png" alt="">
+        </div>
+        <div id="educationDropdown" class="dropdown-content">
+          <a href="/Blog/Blog.html">Blog</a>
+          <a>Research</a>
+        </div>
+      </div>
+      <a href="" class="nav-item">Contact us</a>
+    </div>
+
+
+    <div class="login-mobile-navigation-div">
+      <div class="login-btn-div">
+        <button class="login-btn">LOGIN</button>
+      </div>
+
+      <button class="mobile-menu-btn" onclick="toggleNav()"><img class="menu-icon" src="/img/mobile-menu.png"
+          alt=""></button>
+
+      <ul class="nav-menu" id="navMenu">
+        <button class="mobile-menu-close-btn" onclick="toggleNav()"><img style="width: 50px;" src="/img/close-white-buton.png"
+            alt=""></button>
+        <div class="mobile-nav-items">
+          <li><a href="#home">how it works</a></li>
+          <div class="mobile-nav-links">
+            <li><a href="/performance/performance.html">Performance</a></li>
+            <div class="mobile-nav-links-info">
+              <a href="/performance/performance.html">Performance</a>
+              <a href="">Testimonials</a>
+            </div>
+          
+          </div>
+          <div class="mobile-nav-links">
+            <li><a href="">about</a></li>
+            <div class="mobile-nav-links-info">
+            <a href="">Career</a>
+            <a href="/team/team.html">Our Team</a>
+            </div>
+          </div>
+          <div class="mobile-nav-links">
+            <li><a href="#contact">Education</a></li>
+            <div class="mobile-nav-links-info">
+            <a href="/Blog/Blog.html">Blog</a>
+            <a href="">Research</a>
+            </div>
+          </div>
+          <li><a href="#contact">Contact us</a></li>
+        </div>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="section-start-now">
+    <div class="start-now-info">
+      <h2 class="section-start-now-title">Crypto Without The Gut-Wrenching Swings</h2>
+      <span class="section-start-now-description">Fully automated, hedge-fund-grade trading you never touch. Powered
+        by Trend Following (the most successful trading strategy in history).</span>
+
+      <div class="start-now-btn-div">
+        <button class="start-now-btn">Start Now</button>
+      </div>
+      <div class="mobile-image-div">
+        <img class="mobile-image" src="img/start-now-mobile.png" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="info-section">
+    <div class="info-section-first-slice">
+      <div class="invested-info">
+        <h2 class="invested-title">$600k</h2>
+        <span class="invested-description">Invested on platform <br> since inception</span>
+      </div>
+
+      <div class="invested-info">
+        <h2 class="invested-title">117+</h2>
+        <span class="invested-description">Active users <br> and counting</span>
+      </div>
+    </div>
+    <div class="info-section-middle-div">
+    </div>
+    <div class="info-section-second-slice">
+      <div class="info-section-second-slice-info">
+        <img class="info-icons" src="/img/key.png" alt="">
+        <p class="invested-description">Something about safety of investments</p>
+      </div>
+
+      <div class="info-section-second-slice-info">
+        <img class="info-icons" src="/img/crypto.png" alt="">
+        <p class="invested-description">What we do <br> with crypto</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="big-profits-section">
+    <div class="big-profits-img-div">
+      <img class="big-profits-img" src="/img/big-profits.jpg" alt="">
+    </div>
+    <div class="big-profits-about">
+      <p class="big-profits-about-title">Big Profits With Unmatched Stability</p>
+      <h2 class="big-profits-about-description">Incredible Returns Without The Drawdowns. Even In Bear Markets</h2>
+      <div class="tabs">
+        <input type="radio" id="tab1" name="tab-control">
+        <input type="radio" id="tab2" name="tab-control" checked>
+
+        <div style="width: 100%; height: 3px; background-color: #E1E4F0; position: absolute;"></div>
+
+        <div class="slider">
+          <div class="indicator"></div>
+        </div>
+        <ul>
+          <li title="The Problem "><label for="tab1" role="button"><br><span>The Problem </span></label></li>
+          <li title="We fixed that"><label for="tab2" role="button"><br><span>We fixed that</span></label></li>
+        </ul>
+
+
+        <div class="content">
+          <section>
+            <h2>Features</h2>
+            <p class="tabs-content-description">
+              The basis of FinRev is a strategy called Trend Following (aka Trend). Trend has been around for centuries
+              and has been used to create massive fortunes in “traditional” markets by investing titans like George
+              Soros, Paul Tudor Jones, and others you’ve likely heard of. Trend following is the idea that if something
+              is going up, we should buy it because statistically it’s more likely to keep going up. <br> <br>
+              And if something is going down, we should short it because statistically it’s more likely to keep going
+              down. With trend, you’re making a lot of small bets that things will keep moving in the direction they are
+              going, up or down.
+            </p>
+          </section>
+          <section>
+            <h2>Delivery Contents</h2>
+            <p class="tabs-content-description">
+              The basis of FinRev is a strategy called Trend Following (aka Trend). Trend has been around for centuries
+              and has been used to create massive fortunes in “traditional” markets by investing titans like George
+              Soros, Paul Tudor Jones, and others you’ve likely heard of. Trend following is the idea that if something
+              is going up, we should buy it because statistically it’s more likely to keep going up. <br> <br>
+              And if something is going down, we should short it because statistically it’s more likely to keep going
+              down. With trend, you’re making a lot of small bets that things will keep moving in the direction they are
+              going, up or down.
+            </p>
+          </section>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button class="book-btn">Book a Demo</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="personalized-profits-section">
+    <p class="big-profits-about-title">Personalized Profits</p>
+    <h2 class="personalized-profits-title">Incredible Returns Without The <br> Drawdowns. Even In Bear Markets</h2>
+    <div class="personalized-profits-img-div">
+      <img class="personalized-profits-img" src="/img/Personalized-Profits.jpg" alt="">
+    </div>
+    <span class="personalized-profits-description">Whether you’ve got 15 years to retirement and are playing the long
+      game or you’ve got 5 years left and don’t feel ready at all. Whether you’re a risk taker or a more cautious
+      investor. Whether you’re all in on crypto or just dipping your toe in the water.</span>
+    <div class="btn-div">
+      <button class="book-btn">Read more</button>
+    </div>
+  </div>
+
+  <div class="testimonials-section">
+    <p class="big-profits-about-title">Testimonials</p>
+    <h2 class="personalized-profits-title">Honest Reviews From Our Community</h2>
+    <span class="personalized-profits-description">Hear it straight from people just like you <br> using FinRev to
+      achieve life-changing wealth.</span>
+  </div>
+  <div class="carousel">
+    <div class="carousel-item">
+      <div class="carousel-item-top">
+        <div class="user-img-div"><img class="user-img" src="/img/user.png" alt=""></div>
+        <div>
+          <h2 class="user-name">Ayesha Holt</h2>
+          <span class="user-date">Investor since 2019</span>
+        </div>
+      </div>
+      <div class="carousel-item-bottom">
+        <p class="user-description">The ease of use of the platform, and the complete transparency are top features
+          to me.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-item-top">
+        <div class="user-img-div"><img class="user-img" src="/img/user.png" alt=""></div>
+        <div>
+          <h2 class="user-name">Ayesha Holt</h2>
+          <span class="user-date">Investor since 2019</span>
+        </div>
+      </div>
+      <div class="carousel-item-bottom">
+        <p class="user-description">The ease of use of the platform, and the complete transparency are top features
+          to me.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-item-top">
+        <div class="user-img-div"><img class="user-img" src="/img/user.png" alt=""></div>
+        <div>
+          <h2 class="user-name">Ayesha Holt</h2>
+          <span class="user-date">Investor since 2019</span>
+        </div>
+      </div>
+      <div class="carousel-item-bottom">
+        <p class="user-description">The ease of use of the platform, and the complete transparency are top features
+          to me.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-item-top">
+        <div class="user-img-div"><img class="user-img" src="/img/user.png" alt=""></div>
+        <div>
+          <h2 class="user-name">Ayesha Holt</h2>
+          <span class="user-date">Investor since 2019</span>
+        </div>
+      </div>
+      <div class="carousel-item-bottom">
+        <p class="user-description">The ease of use of the platform, and the complete transparency are top features
+          to me.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-item-top">
+        <div class="user-img-div"><img class="user-img" src="/img/user.png" alt=""></div>
+        <div>
+          <h2 class="user-name">Ayesha Holt</h2>
+          <span class="user-date">Investor since 2019</span>
+        </div>
+      </div>
+      <div class="carousel-item-bottom">
+        <p class="user-description">The ease of use of the platform, and the complete transparency are top features
+          to me.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-item-top">
+        <div class="user-img-div"><img class="user-img" src="/img/user.png" alt=""></div>
+        <div>
+          <h2 class="user-name">Ayesha Holt</h2>
+          <span class="user-date">Investor since 2019</span>
+        </div>
+      </div>
+      <div class="carousel-item-bottom">
+        <p class="user-description">The ease of use of the platform, and the complete transparency are top features
+          to me.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="carousel-btn">
+    <button class="book-btn">Book a Demo</button>
+  </div>
+
+  <div class="company-section">
+    <div class="company-info-div">
+      <div class="company-info-items">
+        <img class="info-icons" src="img/the-problem.png" alt="">
+        <h2 class="the-problem">The Problem </h2>
+        <span class="user-description">Despite being the fastest appreciating asset class in history, cryptocurrencies
+          remain uninvestable for most people.</span>
+      </div>
+      <div class="company-info-items">
+        <img class="info-icons" src="img/our-solution.png" alt="">
+        <h2 class="our-solution">Our Solution</h2>
+        <span class="user-description">We make cryptocurrency investable for anyone by algorithmically investing in
+          proven risk premia harvesting strategies. These proven strategies from traditional markets, applied to
+          cryptocurrencies, increase returns while dramatically reducing drawdowns. Our world class algorithmic trading
+          infrastructure and innovative reduction of counterparty risks unlocks extraordinary geometric returns.</span>
+      </div>
+      <div class="company-info-items">
+        <img class="info-icons" src="img/mission-statement.png" alt="">
+        <h2 class="mission-statement">Mission Statement</h2>
+        <span class="user-description">Democratize wealth creation via cryptocurrency investing (to be defined in our
+          mission and vision workshop)</span>
+      </div>
+      <div class="company-info-items">
+        <img class="info-icons" src="img/culture.png" alt="">
+        <h2 class="culture">Culture</h2>
+        <span class="user-description">We operate like a professional sports team with a single-minded focus on making
+          our customers financially successful.</span>
+      </div>
+      <div style="margin-top: -10px;" class="btn-div">
+        <button class="book-btn">Call to action</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="under-the-hood-section">
+    <div class="big-profits-img-div">
+      <img class="big-profits-img" src="/img/under-the-hood.jpg" alt="">
+    </div>
+    <div class="big-profits-about">
+      <p class="big-profits-about-title">Under The Hood</p>
+      <h2 class="big-profits-about-description">It’s Your Money. You Deserve <br> to Know Exactly What Powers <br> Your Investment
+      </h2>
+
+      <div class="tabs">
+        <input type="radio" id="tab3" name="tab-control-second" checked>
+        <input type="radio" id="tab4" name="tab-control-second">
+        <input type="radio" id="tab5" name="tab-control-second">
+        <div class="tab-active"></div>
+        <div class="slider">
+          <div class="indicator"></div>
+        </div>
+        <ul>
+          <li title="The basics"><label for="tab3" role="button"><br><span>The basics</span></label></li>
+          <li title="The reason"><label for="tab4" role="button"><br><span>The reason</span></label></li>
+          <li style="width: 38%;" title="Detailed information"><label for="tab5" role="button"><br><span>Detailed
+                information</span></label></li>
+        </ul>
+
+
+        <div class="content">
+          <section>
+            <h2>The basics</h2>
+            <p class="tabs-content-description"> Cryptocurrencies can appreciate further and faster than any other asset
+              class. And they can also crash spectacularly. Our approach is to try and make profits in both up and down
+              markets rather than a buy and hold approach which might take many years to realize profits. Fortunately,
+              there is a strategy from the 300 billion dollar CTA industry designed to do exactly this.</p>
+          </section>
+          <section>
+            <h2>The reason</h2>
+            <p class="tabs-content-description"> Cryptocurrencies can appreciate further and faster than any other asset
+              class. And they can also crash spectacularly. Our approach is to try and make profits in both up and down
+              markets rather than a buy and hold approach which might take many years to realize profits. Fortunately,
+              there is a strategy from the 300 billion dollar CTA industry designed to do exactly this.</p>
+          </section>
+          <section>
+            <h2>Detailed information</h2>
+            <p class="tabs-content-description"> Cryptocurrencies can appreciate further and faster than any other asset
+              class. And they can also crash spectacularly. Our approach is to try and make profits in both up and down
+              markets rather than a buy and hold approach which might take many years to realize profits. Fortunately,
+              there is a strategy from the 300 billion dollar CTA industry designed to do exactly this.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="analytics-section">
+    <div class="analytics-img-div">
+      <img class="analytics-img" src="/img/analytics.png" alt="">
+    </div>
+    <div class="analytics-about">
+      <p class="user-description">When we take standard trend following algorithms which have made billions in
+        traditional markets and apply them to crypto they perform 3x better. We have no fundamental opinions about the
+        merits of any individual coin. All trading decisions are made algorithmically, eliminating human error.
+        We take positions in every crypto coin which starts to rise in value. And simultaneously take short positions in
+        every crypto coin which starts to fall. By simultaneously trading over 100 coins in a long-short portfolio we
+        are insulated from broader market trends while providing extraordinary returns.
+        By delivering astonishing returns with tiny drawdowns our long term compounded growth rate is unmatched in the
+        industry.</p>
+      <div class="btn-div"><button class="book-btn">Read more</button></div>
+    </div>
+  </div>
+
+  <div class="security-section">
+    <img class="security-icon" src="img/security.png" alt="">
+    <p class="security-description">Vestibul rocus pelentesque <br> ullamcorper dignissim tincidunt</p>
+    <button class="security-btn">Read more</button>
+  </div>
+
+  <div class="submit-resume-section">
+    <div class="big-profits-about">
+      <p class="big-profits-about-title">work with the best</p>
+      <h2 class="big-profits-about-description big-profits-about-description-width">If you consider yourself an “A-Player” and want to help others achieve
+        their dreams (and achieve yours in the process), we’d love to talk.
+      </h2>
+      <div class="submit-resume-btn-div">
+        <button class="submit-resume-btn"><img src="img/submit-resume-icon.png" alt=""> <span>Submit your resume
+            directly</span></button>
+        <div class="btn-div">
+          <button class="book-btn">Book a Demo</button>
+        </div>
+      </div>
+    </div>
+    <div class="big-profits-img-div">
+      <img class="big-profits-img" src="/img/submit-resume.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="contact-us-section">
+    <div class="contact-us-img-div">
+      <img class="contact-us-img" src="/img/contact-us.jpg" alt="">
+    </div>
+    <div class="contact-us-info">
+      <h2 class="big-profits-about-description">Contact us</h2>
+      <span class="user-description contact-us-description">FinRev provides white label technology services, works with
+        qualified affiliate partners, and we are happy to answer detailed technical questions about the construction of
+        our signals</span>
+      <div class="contact-us-buttons">
+        <div class="btn-div">
+          <button class="book-btn"><img class="sms-image" src="img/sms.png" alt="">finrev@gmail.com</button>
+        </div>
+        <div class="social-icons-div">
+          <a class="social-icons-parent" href="">
+            <img class="social-icons" src="img/facebook.png" alt="">
+          </a>
+
+          <a class="social-icons-parent" href="">
+            <img class="social-icons" src="img/gmail.png" alt="">
+          </a>
+
+          <a class="social-icons-parent" href="">
+            <img class="social-icons" src="img/instagram.png" alt="">
+          </a>
+
+          <a class="social-icons-parent" href="">
+            <img class="social-icons" src="img/telegram.png" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="subscribe-section">
+    <div class="subscribe-first-slice">
+      <img class="subscribe-security-icon" src="/img/security-orange.png" alt="">
+    </div>
+
+    <div class="subscribe-info">
+      <p class="big-profits-about-title">under the hood</p>
+      <h2 class="big-profits-about-description">Receive regular FinRev performance updates</h2>
+      <span class="user-description">Enter your best email in the box below and you’ll be added to our email list where
+        our Founder & CEO sends out witty and informative crypto updates on a regular basis. We promise not to bombard
+        you with emails only trying to sell you stuff.</span>
+      <div class="subscribe-input-div">
+        <input class="subscribe-input" placeholder="Enter your email" type="text">
+        <button class="subscribe-btn">subscribe</button>
+      </div>
+      <div class="subscribe-btn-mobile-div">
+        <button class="subscribe-btn-mobile">subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-items">
+        <div class="footer-item-div">
+          <a class="footer-item" href="">how it works</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">Performance</a>
+          <a href="/performance/performance.html" class="footer-item-info">Performance</a>
+          <a class="footer-item-info">Testimonials</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">About</a>
+          <a class="footer-item-info">Careers</a>
+          <a href="/team/team.html" class="footer-item-info">Our team</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">Education</a>
+          <a href="/Blog/Blog.html" class="footer-item-info">Blog</a>
+          <a class="footer-item-info">Research</a>
+        </div>
+
+        <div class="footer-item-div">
+          <a class="footer-item" href="">Contacts</a>
+          <span class="footer-item-info">finrev@gmail.com</span>
+          <span class="footer-item-info">844-943-5378</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-items">
+        <div class="center-div">
+          <div class="logo-div">
+            <img class="logo" src="/img/Logo.png" alt="">
+          </div>
+          <div class="footer-social-icons">
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-facebook.png" alt="">
+            </a>
+
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-gmail.png" alt="">
+            </a>
+
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-instagram.png" alt="">
+            </a>
+
+            <a class="social-icons-parent" href="">
+              <img class="social-icons" src="/img/footer-telegram.png" alt="">
+            </a>
+          </div>
+          <div class="footer-copyright-div">
+            <div class="footer-copyright-first-item">
+              <p class="copyright">Finrev, <br> Incorporated</p>
+            </div>
+            <div class="footer-copyright-second-item">
+              <p class="copyright">
+                Copyright © 2023 <br> All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
